@@ -32,11 +32,16 @@ public class PersonajeService implements IPersonajeService{
     }
 
     @Override
-    public Personajews registrarActualizarPersonaje(Personajews personajews) {
+    public Personajews crearPersonaje(Personajews personaje) {
         Personaje nuevoPersonaje = personajeRepository.save(
-                personajeConvert.convertPersonajewsToPersonaje(personajews));
-        if(nuevoPersonaje == null)
-            return  null;
+                personajeConvert.convertPersonajewsToPersonaje(personaje));
+        return personajeConvert.convertPersonajeToPersonajeWs(nuevoPersonaje);
+    }
+
+    @Override
+    public Personajews actualizarPersonaje(Personajews personaje) {
+        Personaje nuevoPersonaje = personajeRepository.save(
+                personajeConvert.convertPersonajewsToPersonaje(personaje));
         return personajeConvert.convertPersonajeToPersonajeWs(nuevoPersonaje);
     }
 }

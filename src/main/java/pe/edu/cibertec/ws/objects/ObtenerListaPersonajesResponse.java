@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.09 a las 01:14:45 AM PET 
+// Generado el: 2024.06.09 a las 07:19:24 AM PET 
 //
 
 
@@ -40,8 +40,8 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "personajes"
 })
-@XmlRootElement(name = "getPersonajesResponse")
-public class GetPersonajesResponse {
+@XmlRootElement(name = "obtenerListaPersonajesResponse")
+public class ObtenerListaPersonajesResponse {
 
     @XmlElement(required = true)
     protected List<Personajews> personajes;

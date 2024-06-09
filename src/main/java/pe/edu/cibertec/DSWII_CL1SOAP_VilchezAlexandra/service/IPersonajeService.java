@@ -7,5 +7,6 @@ import java.util.List;
 public interface IPersonajeService {
     List<Personajews> listarPersonajes();
     Personajews obtenerPersonajexId(int id);
-    Personajews registrarActualizarPersonaje(Personajews personaje);
+    Personajews crearPersonaje(Personajews personaje);
+    Personajews actualizarPersonaje(Personajews personaje);
 }

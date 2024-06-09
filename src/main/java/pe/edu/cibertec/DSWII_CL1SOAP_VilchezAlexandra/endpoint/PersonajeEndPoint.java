@@ -15,33 +15,46 @@ public class PersonajeEndPoint {
     private PersonajeService personajeService;
     private static final String NAMESPACE_URL = "http://www.cibertec.edu.pe/ws/objects";
 
-    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "getPersonajesRequest")
+    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "crearPersonajeRequest")
     @ResponsePayload
-    public GetPersonajesResponse getPersonajes(@RequestPayload
-                                         GetPersonajesRequest request){
-        GetPersonajesResponse response = new GetPersonajesResponse();
+    public CrearPersonajeResponse crearPersonaje(@RequestPayload CrearPersonajeRequest request){
+        CrearPersonajeResponse response = new CrearPersonajeResponse();
+        response.setPersonaje(personajeService.crearPersonaje(request.getPersonaje()));
+        return response;
+    }
+
+    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "actualizarPersonajeRequest")
+    @ResponsePayload
+    public ActualizarPersonajeResponse actualizarPersonaje(@RequestPayload ActualizarPersonajeRequest request){
+        ActualizarPersonajeResponse response = new ActualizarPersonajeResponse();
+        response.setPersonaje(personajeService.actualizarPersonaje(request.getPersonaje()));
+        return response;
+    }
+
+    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "buscarPersonajesRequest")
+    @ResponsePayload
+    public BuscarPersonajesResponse buscarPersonajes(@RequestPayload BuscarPersonajesRequest request){
+        BuscarPersonajesResponse response = new BuscarPersonajesResponse();
         response.getPersonajes().addAll(personajeService.listarPersonajes());
         return response;
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "getPersonajeRequest")
+    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "buscarPersonajePorIdRequest")
     @ResponsePayload
-    public GetPersonajeResponse getPersonaje(@RequestPayload
-                                     GetPersonajeRequest request){
-        GetPersonajeResponse response = new GetPersonajeResponse();
+    public BuscarPersonajePorIdResponse buscarPersonajePorId(@RequestPayload BuscarPersonajePorIdRequest request){
+        BuscarPersonajePorIdResponse response = new BuscarPersonajePorIdResponse();
         Personajews personajews = personajeService.obtenerPersonajexId(request.getId());
         if(personajews == null)
             throw new NotFoundException("El personaje con el ID "+ request.getId()+" no existe!");
         response.setPersonaje(personajews);
         return response;
     }
-    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "postPersonajeRequest")
+
+    @PayloadRoot(namespace = NAMESPACE_URL, localPart = "obtenerListaPersonajesRequest")
     @ResponsePayload
-    public PostPersonajeResponse savePersonaje(@RequestPayload
-                                       PostPersonajeRequest request){
-        PostPersonajeResponse response = new PostPersonajeResponse();
-        response.setPersonaje(personajeService.registrarActualizarPersonaje(
-                request.getPersonaje()));
+    public ObtenerListaPersonajesResponse obtenerListaPersonajes(@RequestPayload ObtenerListaPersonajesRequest request){
+        ObtenerListaPersonajesResponse response = new ObtenerListaPersonajesResponse();
+        response.getPersonajes().addAll(personajeService.listarPersonajes());
         return response;
     }
 }

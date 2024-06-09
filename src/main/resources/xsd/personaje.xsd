@@ -3,13 +3,48 @@
            targetNamespace="http://www.cibertec.edu.pe/ws/objects"
            elementFormDefault="qualified">
 
-    <xs:element name="getPersonajesRequest">
+    <!-- Operación para crear un personaje -->
+    <xs:element name="crearPersonajeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personaje" type="tns:personajews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="crearPersonajeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personaje" type="tns:personajews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Operación para actualizar un personaje -->
+    <xs:element name="actualizarPersonajeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personaje" type="tns:personajews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="actualizarPersonajeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personaje" type="tns:personajews"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Operación para buscar todos los personajes -->
+    <xs:element name="buscarPersonajesRequest">
         <xs:complexType>
             <xs:sequence/>
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="getPersonajesResponse">
+    <xs:element name="buscarPersonajesResponse">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="personajes" type="tns:personajews"
@@ -18,7 +53,8 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="getPersonajeRequest">
+    <!-- Operación para buscar un personaje por ID -->
+    <xs:element name="buscarPersonajePorIdRequest">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="id" type="xs:int"/>
@@ -26,7 +62,7 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="getPersonajeResponse">
+    <xs:element name="buscarPersonajePorIdResponse">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="personaje" type="tns:personajews"/>
@@ -34,18 +70,18 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="postPersonajeRequest">
+    <!-- Operación para obtener la lista de todos los personajes -->
+    <xs:element name="obtenerListaPersonajesRequest">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element name="personaje" type="tns:personajews"/>
-            </xs:sequence>
+            <xs:sequence/>
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="postPersonajeResponse">
+    <xs:element name="obtenerListaPersonajesResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="personaje" type="tns:personajews"/>
+                <xs:element name="personajes" type="tns:personajews"
+                            maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

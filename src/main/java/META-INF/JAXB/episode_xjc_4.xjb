@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.06.09 a las 07:19:24 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:crearPersonajeRequest">
+      <class ref="pe.edu.cibertec.ws.objects.CrearPersonajeRequest"/>
+    </bindings>
+    <bindings scd="~tns:personajews">
+      <class ref="pe.edu.cibertec.ws.objects.Personajews"/>
+    </bindings>
+    <bindings scd="tns:crearPersonajeResponse">
+      <class ref="pe.edu.cibertec.ws.objects.CrearPersonajeResponse"/>
+    </bindings>
+    <bindings scd="tns:actualizarPersonajeRequest">
+      <class ref="pe.edu.cibertec.ws.objects.ActualizarPersonajeRequest"/>
+    </bindings>
+    <bindings scd="tns:actualizarPersonajeResponse">
+      <class ref="pe.edu.cibertec.ws.objects.ActualizarPersonajeResponse"/>
+    </bindings>
+    <bindings scd="tns:buscarPersonajesRequest">
+      <class ref="pe.edu.cibertec.ws.objects.BuscarPersonajesRequest"/>
+    </bindings>
+    <bindings scd="tns:buscarPersonajesResponse">
+      <class ref="pe.edu.cibertec.ws.objects.BuscarPersonajesResponse"/>
+    </bindings>
+    <bindings scd="tns:buscarPersonajePorIdRequest">
+      <class ref="pe.edu.cibertec.ws.objects.BuscarPersonajePorIdRequest"/>
+    </bindings>
+    <bindings scd="tns:buscarPersonajePorIdResponse">
+      <class ref="pe.edu.cibertec.ws.objects.BuscarPersonajePorIdResponse"/>
+    </bindings>
+    <bindings scd="tns:obtenerListaPersonajesRequest">
+      <class ref="pe.edu.cibertec.ws.objects.ObtenerListaPersonajesRequest"/>
+    </bindings>
+    <bindings scd="tns:obtenerListaPersonajesResponse">
+      <class ref="pe.edu.cibertec.ws.objects.ObtenerListaPersonajesResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

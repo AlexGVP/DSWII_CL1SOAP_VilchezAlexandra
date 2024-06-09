@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.09 a las 05:55:53 AM PET 
+// Generado el: 2024.06.09 a las 07:19:24 AM PET 
 //
 
 
@@ -37,83 +37,91 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CalcularJubilacionRequest }
+     * Create an instance of {@link CrearPersonajeRequest }
      * 
      */
-    public CalcularJubilacionRequest createCalcularJubilacionRequest() {
-        return new CalcularJubilacionRequest();
+    public CrearPersonajeRequest createCrearPersonajeRequest() {
+        return new CrearPersonajeRequest();
     }
 
     /**
-     * Create an instance of {@link CalcularJubilacionResponse }
+     * Create an instance of {@link Personajews }
      * 
      */
-    public CalcularJubilacionResponse createCalcularJubilacionResponse() {
-        return new CalcularJubilacionResponse();
+    public Personajews createPersonajews() {
+        return new Personajews();
     }
 
     /**
-     * Create an instance of {@link CalcularNumMenorRequest }
+     * Create an instance of {@link CrearPersonajeResponse }
      * 
      */
-    public CalcularNumMenorRequest createCalcularNumMenorRequest() {
-        return new CalcularNumMenorRequest();
+    public CrearPersonajeResponse createCrearPersonajeResponse() {
+        return new CrearPersonajeResponse();
     }
 
     /**
-     * Create an instance of {@link CalcularNumMenorResponse }
+     * Create an instance of {@link ActualizarPersonajeRequest }
      * 
      */
-    public CalcularNumMenorResponse createCalcularNumMenorResponse() {
-        return new CalcularNumMenorResponse();
+    public ActualizarPersonajeRequest createActualizarPersonajeRequest() {
+        return new ActualizarPersonajeRequest();
     }
 
     /**
-     * Create an instance of {@link CalcularMatriculaRequest }
+     * Create an instance of {@link ActualizarPersonajeResponse }
      * 
      */
-    public CalcularMatriculaRequest createCalcularMatriculaRequest() {
-        return new CalcularMatriculaRequest();
+    public ActualizarPersonajeResponse createActualizarPersonajeResponse() {
+        return new ActualizarPersonajeResponse();
     }
 
     /**
-     * Create an instance of {@link CalcularMatriculaResponse }
+     * Create an instance of {@link BuscarPersonajesRequest }
      * 
      */
-    public CalcularMatriculaResponse createCalcularMatriculaResponse() {
-        return new CalcularMatriculaResponse();
+    public BuscarPersonajesRequest createBuscarPersonajesRequest() {
+        return new BuscarPersonajesRequest();
     }
 
     /**
-     * Create an instance of {@link CalcularUtilidadesRequest }
+     * Create an instance of {@link BuscarPersonajesResponse }
      * 
      */
-    public CalcularUtilidadesRequest createCalcularUtilidadesRequest() {
-        return new CalcularUtilidadesRequest();
+    public BuscarPersonajesResponse createBuscarPersonajesResponse() {
+        return new BuscarPersonajesResponse();
     }
 
     /**
-     * Create an instance of {@link CalcularUtilidadesResponse }
+     * Create an instance of {@link BuscarPersonajePorIdRequest }
      * 
      */
-    public CalcularUtilidadesResponse createCalcularUtilidadesResponse() {
-        return new CalcularUtilidadesResponse();
+    public BuscarPersonajePorIdRequest createBuscarPersonajePorIdRequest() {
+        return new BuscarPersonajePorIdRequest();
     }
 
     /**
-     * Create an instance of {@link CalcularSumaRequest }
+     * Create an instance of {@link BuscarPersonajePorIdResponse }
      * 
      */
-    public CalcularSumaRequest createCalcularSumaRequest() {
-        return new CalcularSumaRequest();
+    public BuscarPersonajePorIdResponse createBuscarPersonajePorIdResponse() {
+        return new BuscarPersonajePorIdResponse();
     }
 
     /**
-     * Create an instance of {@link CalcularSumaResponse }
+     * Create an instance of {@link ObtenerListaPersonajesRequest }
      * 
      */
-    public CalcularSumaResponse createCalcularSumaResponse() {
-        return new CalcularSumaResponse();
+    public ObtenerListaPersonajesRequest createObtenerListaPersonajesRequest() {
+        return new ObtenerListaPersonajesRequest();
+    }
+
+    /**
+     * Create an instance of {@link ObtenerListaPersonajesResponse }
+     * 
+     */
+    public ObtenerListaPersonajesResponse createObtenerListaPersonajesResponse() {
+        return new ObtenerListaPersonajesResponse();
     }
 
 }
