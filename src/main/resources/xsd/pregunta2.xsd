@@ -1,0 +1,85 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:element name="CalcularJubilacionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="edad" type="xs:int"/>
+                <xs:element name="sexo" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="CalcularJubilacionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultado" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CalcularNumMenorRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numm1" type="xs:int"/>
+                <xs:element name="numm2" type="xs:int"/>
+                <xs:element name="numm3" type="xs:int"/>
+                <xs:element name="numm4" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="CalcularNumMenorResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numMenor" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CalcularMatriculaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numMaterias" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="CalcularMatriculaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="precio" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CalcularUtilidadesRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="salario" type="xs:decimal"/>
+                <xs:element name="tiempo" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="CalcularUtilidadesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="utilidades" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CalcularSumaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="suma" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="CalcularSumaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="suma" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.09 a las 01:14:45 AM PET 
+// Generado el: 2024.06.09 a las 05:55:53 AM PET 
 //
 
 
@@ -37,59 +37,83 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPersonajesRequest }
+     * Create an instance of {@link CalcularJubilacionRequest }
      * 
      */
-    public GetPersonajesRequest createGetPersonajesRequest() {
-        return new GetPersonajesRequest();
+    public CalcularJubilacionRequest createCalcularJubilacionRequest() {
+        return new CalcularJubilacionRequest();
     }
 
     /**
-     * Create an instance of {@link GetPersonajesResponse }
+     * Create an instance of {@link CalcularJubilacionResponse }
      * 
      */
-    public GetPersonajesResponse createGetPersonajesResponse() {
-        return new GetPersonajesResponse();
+    public CalcularJubilacionResponse createCalcularJubilacionResponse() {
+        return new CalcularJubilacionResponse();
     }
 
     /**
-     * Create an instance of {@link Personajews }
+     * Create an instance of {@link CalcularNumMenorRequest }
      * 
      */
-    public Personajews createPersonajews() {
-        return new Personajews();
+    public CalcularNumMenorRequest createCalcularNumMenorRequest() {
+        return new CalcularNumMenorRequest();
     }
 
     /**
-     * Create an instance of {@link GetPersonajeRequest }
+     * Create an instance of {@link CalcularNumMenorResponse }
      * 
      */
-    public GetPersonajeRequest createGetPersonajeRequest() {
-        return new GetPersonajeRequest();
+    public CalcularNumMenorResponse createCalcularNumMenorResponse() {
+        return new CalcularNumMenorResponse();
     }
 
     /**
-     * Create an instance of {@link GetPersonajeResponse }
+     * Create an instance of {@link CalcularMatriculaRequest }
      * 
      */
-    public GetPersonajeResponse createGetPersonajeResponse() {
-        return new GetPersonajeResponse();
+    public CalcularMatriculaRequest createCalcularMatriculaRequest() {
+        return new CalcularMatriculaRequest();
     }
 
     /**
-     * Create an instance of {@link PostPersonajeRequest }
+     * Create an instance of {@link CalcularMatriculaResponse }
      * 
      */
-    public PostPersonajeRequest createPostPersonajeRequest() {
-        return new PostPersonajeRequest();
+    public CalcularMatriculaResponse createCalcularMatriculaResponse() {
+        return new CalcularMatriculaResponse();
     }
 
     /**
-     * Create an instance of {@link PostPersonajeResponse }
+     * Create an instance of {@link CalcularUtilidadesRequest }
      * 
      */
-    public PostPersonajeResponse createPostPersonajeResponse() {
-        return new PostPersonajeResponse();
+    public CalcularUtilidadesRequest createCalcularUtilidadesRequest() {
+        return new CalcularUtilidadesRequest();
+    }
+
+    /**
+     * Create an instance of {@link CalcularUtilidadesResponse }
+     * 
+     */
+    public CalcularUtilidadesResponse createCalcularUtilidadesResponse() {
+        return new CalcularUtilidadesResponse();
+    }
+
+    /**
+     * Create an instance of {@link CalcularSumaRequest }
+     * 
+     */
+    public CalcularSumaRequest createCalcularSumaRequest() {
+        return new CalcularSumaRequest();
+    }
+
+    /**
+     * Create an instance of {@link CalcularSumaResponse }
+     * 
+     */
+    public CalcularSumaResponse createCalcularSumaResponse() {
+        return new CalcularSumaResponse();
     }
 
 }

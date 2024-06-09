@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.06.09 a las 05:55:53 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:CalcularJubilacionRequest">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularJubilacionRequest"/>
+    </bindings>
+    <bindings scd="tns:CalcularJubilacionResponse">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularJubilacionResponse"/>
+    </bindings>
+    <bindings scd="tns:CalcularNumMenorRequest">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularNumMenorRequest"/>
+    </bindings>
+    <bindings scd="tns:CalcularNumMenorResponse">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularNumMenorResponse"/>
+    </bindings>
+    <bindings scd="tns:CalcularMatriculaRequest">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularMatriculaRequest"/>
+    </bindings>
+    <bindings scd="tns:CalcularMatriculaResponse">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularMatriculaResponse"/>
+    </bindings>
+    <bindings scd="tns:CalcularUtilidadesRequest">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularUtilidadesRequest"/>
+    </bindings>
+    <bindings scd="tns:CalcularUtilidadesResponse">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularUtilidadesResponse"/>
+    </bindings>
+    <bindings scd="tns:CalcularSumaRequest">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularSumaRequest"/>
+    </bindings>
+    <bindings scd="tns:CalcularSumaResponse">
+      <class ref="pe.edu.cibertec.ws.objects.CalcularSumaResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
